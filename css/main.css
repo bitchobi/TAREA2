@@ -1,6 +1,6 @@
 @charset "utf-8";
 html {
-  height: 100%;
+  min-height: 100%;
 }
 body {
   position: relative;
@@ -19,7 +19,7 @@ div,
 li {
   box-sizing: border-box;
 }
-.header_nav {
+.navegacion_encabezado {
   background: linear-gradient(90deg, #fff 20%, rgba(0, 0, 0, 0.6) 60%);
   display: flex;
   height: 60px;
@@ -29,92 +29,76 @@ li {
   top: 0;
   width: 100%;
 }
-.global_nav_item {
+.item_navegacion_global {
   color: #fff;
   text-decoration: none;
   display: flex;
   align-items: center;
   padding: 0 20px;
 }
-.global_nav_item:hover {
+.item_navegacion_global:hover {
   background: #fff;
   color: #42210b;
 }
-.global_nav {
+.navegacion_global {
   display: flex;
   align-items: stretch;
 }
-.logo {
+.logotipo {
   width: 120px;
   display: flex;
   align-items: center;
 }
-.logo img {
+.logotipo img {
   width: 100%;
 }
-.section_inner {
+.seccion_interna {
   padding: 50px 10% 30px;
 }
-.key {
+.seccion_1 {
+  background: center / cover no-repeat url("../images/sample_menu_bg.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+}
+.clave {
   height: 500px;
   background: center / cover no-repeat url("../images/sample_key.jpg");
   font-family: "Noto Serif JP", serif;
   font-weight: bold;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; /*Centrado vertical */
 }
-.key h1 {
+
+.clave h1 {
   font-size: 2.5rem;
 }
-.section_title {
+
+.titulo_seccion {
   font-family: "Noto Serif JP", serif;
   font-weight: bold;
   text-align: center;
   margin-bottom: 50px;
 }
-.concept_inner {
-  display: flex;
-  justify-content: space-between;
-}
-.concept_content {
-  width: 60%;
-}
-.concept_image {
-  width: 35%;
-}
-.menu_section {
-  background: center / cover no-repeat url("../images/sample_menu_bg.jpg");
-  background-attachment: fixed;
-  background-size: 100%;
-}
-.menu_title {
-  display: inline-block;
-  font-family: "Noto Serif JP", serif;
-  font-size: 1.5rem;
-  color: #42210b;
-  border-bottom: solid #42210b 1px;
-  margin-bottom: 20px;
-}
-.center {
+.centrado {
   text-align: center;
 }
-.menu_list {
+.lista_menu {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.menu_list_recommended {
+.lista_menu_recomendado {
   padding-bottom: 50px;
 }
-.menu_item {
+.item_menu {
   width: 49%;
   display: flex;
   flex-direction: row-reverse;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
   margin-bottom: 20px;
 }
-.menu_item_content {
+.contenido_item_menu {
   width: 45%;
   padding: 10px;
   display: flex;
@@ -122,52 +106,62 @@ li {
   justify-content: space-between;
   background: #fff;
 }
-
-.menu_item_title {
+.titulo_item_menu {
   font-size: 18px;
   font-family: "Noto Serif JP", serif;
 }
-.menu_item_price {
+.precio_item_menu {
   color: #42210b;
   font-size: 18px;
   text-align: right;
 }
-
-.menu_item_image {
+.imagen_item_menu {
   width: 55%;
   object-fit: cover;
   height: 300px;
 }
-.coffee_menu {
+.menu_cafe {
   background: #fff;
   padding: 20px;
 }
-.caffee_menu_list_item {
+.item_lista_cafe {
   width: 49%;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   padding: 10px;
 }
-.caffee_menu_content {
+.contenido_menu_cafe {
   width: 80%;
   padding: 10px;
 }
-.caffee_menu_image {
+.imagen_menu_cafe {
   width: 20%;
   border-radius: 50%;
 }
-.info {
+.concepto {
+  display: flex;
+  justify-content: space-between;
+}
+.contenido_texto {
+  width: 60%;
+}
+.imagen_concepto {
+  width: 35%;
+  align-items: right;
+}
+.informacion {
   display: flex;
 }
-.info_title {
+.titulo_informacion {
   width: 80px;
 }
-.frame_area {
+.marco_mapa {
   position: relative;
   width: 100%;
 }
-.footer {
+
+.pie_pagina {
   width: 100%;
   background: #251e19;
   position: absolute;
@@ -175,12 +169,12 @@ li {
   padding-bottom: 10px;
   height: 75px;
 }
-.footer_nav {
+.navegacion_pie {
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
 }
-.footer_nav_item {
+.item_navegacion_pie {
   padding: 0 10px;
   display: flex;
   flex-direction: column;
@@ -189,10 +183,10 @@ li {
   text-decoration: none;
   font-size: 15px;
 }
-.footer_logo {
+.logotipo_pie {
   width: 80px;
 }
-.footer_right {
+.derechos_pie {
   color: white;
   text-align: center;
   font-size: 10px;
